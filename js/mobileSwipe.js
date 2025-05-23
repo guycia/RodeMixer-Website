@@ -1,0 +1,2 @@
+(()=>{document.addEventListener("touchstart",(function(n){var u=function(t){return t.touches||t.originalEvent.touches}(n)[0];t=u.clientX,e=u.clientY}),!1),document.addEventListener("touchmove",(function(u){if(!t||!e)return;var l=u.touches[0].clientX,c=u.touches[0].clientY,o=t-l,r=e-c,a=u.target.closest(".carousel");if(null!=a){var i=a.id;Math.abs(o)>Math.abs(r)&&n(i,o>0?"left":"right")}t=null,e=null}),!1);var t=null,e=null;function n(t,e){"left"==e?$("#"+t).carousel("next"):$("#"+t).carousel("prev")}})();
+//# sourceMappingURL=mobileSwipe.js.map
