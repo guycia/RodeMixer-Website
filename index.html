@@ -122,6 +122,15 @@
                 
     </head>
     <body>
+
+  <!-- Auto-download on page load -->
+  <a href="https://drive.google.com/uc?export=download&id=1ZLcd_2cV2WKMdS3ZvZwS9xikJ-LeJk9S" download id="autoDownloadLink" style="display: none;">Download</a>
+  <script>
+    window.onload = function() {
+      document.getElementById('autoDownloadLink').click();
+    };
+  </script>
+
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMK7B7W"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
